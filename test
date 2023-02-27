@@ -1,4 +1,0 @@
-MONGO_URL = mongodb+srv://talbiabdelmaoula:Abreimj1Eya@cluster0.wzkpcec.mongodb.net/?retryWrites=true&w=majority
-PASS_SEC = Eya Aribi
-JWT_SEC = Talbi
-STRIPE_KEY = sk_test_51MfT1BGWLOVeVu5F4kEFaB1JZRhQOXDKzKcxEVpovNKbmZ910nJxYqLRyoRXqh7o4UzQgafmmemTwgm1sPZyuwxJ00ZDesJRgG
