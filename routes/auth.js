@@ -21,8 +21,8 @@ router.post("/register", async (req, res) => {
 
   try {
     const savedUser = await newUser.save();
-    res.redirect('/auth/login');
-    //res.status(201).json(savedUser);
+    //res.redirect('/auth/login');
+    res.status(201).redirect('/auth/login');
   } catch (err) {
     res.status(500).json(err);
   }
@@ -60,8 +60,13 @@ router.post("/login", async (req, res) => {
     // To not show the password when user informations show up
     const { password, ...others } = user._doc;
 
-    res.redirect("/products");
-    // res.status(200).json({ ...others, accessToken });
+    // res.redirect("/products");
+    if (user.isAdmin == true) {
+      res.status(200).redirect("/admin");
+    } else {
+      res.status(200).redirect("/product");
+      //json({ ...others, accessToken });
+    }
   } catch (err) {
     res.status(500).json(err);
   }

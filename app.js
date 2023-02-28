@@ -13,6 +13,7 @@ const userRoute = require("./routes/user");
 const authRoute = require("./routes/auth");
 const productRoute = require("./routes/product");
 const twoRoute = require("./routes/2");
+const adminRoute = require("./routes/admin");
 /*
 const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/order");
@@ -47,6 +48,7 @@ app.use("/auth", authRoute);
 app.use("/users", userRoute);
 app.use("/products", productRoute);
 app.use("/2", twoRoute);
+app.use("/admin", adminRoute);
 /*
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
