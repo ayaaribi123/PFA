@@ -2,97 +2,88 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
- <!-- ======== Swiper Js ======= -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
-    />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/public/images/favicon.png" type="image/png" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<!-- ======== Swiper Js ======= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css" />
 
-  <!-- Boxicons -->
-  <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Custom StyleSheet -->
-  <link rel="stylesheet" href="./styles.css" />
-  <title>Exotic</title>
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+	<!-- Custom StyleSheet -->
+	<link rel="stylesheet" href="/public/styles.css" />
+	<title>Exotic</title>
 </head>
-	<body>
-		<body>
-			<!--navigation-->
-  <!-- Navigation -->
-  
+
+<body>
+
+		<!-- Navigation -->
+
 		<nav class="nav">
 			<div class="wrapper container">
-					<div class="logo"><a href="/">
-							<img src="./images/logo final.jpg" alt="">
+				<div class="logo"><a href="/">
+						<img src="/public/images/logo final.jpg" alt="">
 					</a>
+				</div>
+				<ul class="nav-list">
+					<div class="top">
+						<label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
 					</div>
-					<ul class="nav-list">
-							<div class="top">
-									<label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
-							</div>
-							<li><a href="/">Home</a></li>
-							<li><a href="/products">Products</a></li>
-							<li><a href="/auth/login">Sign in</a></li>
-							<li>
-								<li><a href="">Feedback</a></li>
-							</li>
+					<li><a href="/">Home</a></li>
+					<li><a href="/products">Products</a></li>
+					<li><a href="/auth/login">Login</a></li>
 
-							<li>
-									<a href="" class="desktop-item">Page <span><i class="fas fa-chevron-down"></i></span></a>
-									<input type="checkbox" id="showdrop2" />
-									<label for="showdrop2" class="mobile-item">Page <span><i class="fas fa-chevron-down"></i></span></label>
-									<ul class="drop-menu2">
-											<li><a href="">About</a></li>
-											<li><a href="">Contact</a></li>
-									</ul>
-							<li><a href="/admin">Admin</a></li>
-							</li>
-						<li class="icons">
-							<a href="/cart">
+					<li><a href="">Feedback</a></li>
+					</li>
+
+					<li>
+						<ul class="drop-menu2">
+						</ul>
+					</li>
+					<li class="icons">
+						<a href="/cart">
 							<span>
-								<img src="./images/shoppingBag.svg" alt="">
+								<img src="/public/images/shoppingBag.svg" alt="">
 								<small class="count d-flex">0</small>
 							</span>
 						</a>
 						<span>
-							<img src="./images/search.svg" alt="">
+							<img src="/public/images/search.svg" alt="">
 						</span>
 					</li>
-					</ul>
-					<label for="" class="btn open-btn"><i class="fas fa-bars"></i></label>
+				</ul>
+				<label for="" class="btn open-btn"><i class="fas fa-bars"></i></label>
+			</div>
+		</nav>
+		<!-- Hero -->
+		<div class="hero">
+			<div class="row">
+				<div class="swiper-container slider-1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="/public/images/hero-1.png" alt="">
+							<div class="content">
+								<h1> Exotic
+								</h1>
+								<p><strong>
+										Exotic is an online shop where you can order your favorite
+										exotic fruits which are brought from all over the world.</p></strong>
+								<a href="/products">Shop Now</a>
+							</div>
+						</div>
+					</div>
 				</div>
-			</nav>
-			<!-- Hero -->
-			<div class="hero">
-				<div class="row">
-					<div class="swiper-container slider-1">
-						<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img src="./images/hero-1.png" alt="">
-									<div class="content">
-										<h1> Exotic
-										</h1>
-										<p><strong>
-											Exotic is an online shop where you can order your favorite 
-											exotic fruits which are brought from all over the world.</p></strong>
-											<a href="/products">Shop Now</a>
-									</div>
-								</div>
-									</div>
-								</div>
-				</div>
-				</div>
-  </section>
-  <!-- ======== SwiperJS ======= -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
-  <!-- Custom Scripts -->
-  <script src="./js/slider.js"></script>
-  <script src="./js/index.js"></script>
-</body>
+			</div>
+		</div>
+		</section>
+		<!-- ======== SwiperJS ======= -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+		<!-- Custom Scripts -->
+		<script src="./js/slider.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
 
 </html>
