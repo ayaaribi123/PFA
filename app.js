@@ -8,7 +8,8 @@ dotenv.config();
 
 // const bcrypt = require("bcrypt");
 
-const indexRoute= require("./routes/index");
+const indexRoute = require("./routes/index");
+const adminRoute = require("./routes/admin")
 const userRoute = require("./routes/user");
 const authRoute = require("./routes/auth");
 const productRoute = require("./routes/product");
