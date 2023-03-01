@@ -1,4 +1,3 @@
-/*
 const Cart = require("../models/Cart");
 const {
   verifyToken,
@@ -72,4 +71,3 @@ router.get("/", verifyTokenAndAdmin, async (req, res) => {
 });
 
 module.exports = router;
-*/

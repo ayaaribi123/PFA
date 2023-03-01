@@ -32,19 +32,28 @@
 					<div class="top">
 						<label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
 					</div>
-					<li><a href="/">Home</a></li>
-					<li><a href="/products">Products</a></li>
-					<li><a href="/auth/login">Login</a></li>
+					<ul class="nav-list">
+							<div class="top">
+									<label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+							</div>
+							<li><a href="/">Home</a></li>
+							<li><a href="/products">Products</a></li>
+							<li><a href="/auth/login"> <%= sign %> </a></li>
+							<li>
+								<li><a href="">Feedback</a></li>
+							</li>
 
-					<li><a href="">Feedback</a></li>
-					</li>
-
-					<li>
-						<ul class="drop-menu2">
-						</ul>
-					</li>
-					<li class="icons">
-						<a href="/cart">
+							<li>
+									<a href="" class="desktop-item">Page <span><i class="fas fa-chevron-down"></i></span></a>
+									<input type="checkbox" id="showdrop2" />
+									<label for="showdrop2" class="mobile-item">Page <span><i class="fas fa-chevron-down"></i></span></label>
+									<ul class="drop-menu2">
+											<li><a href="">About</a></li>
+											<li><a href="">Contact</a></li>
+									</ul>
+							</li>
+						<li class="icons">
+							<a href="/cart">
 							<span>
 								<img src="/public/images/shoppingBag.svg" alt="">
 								<small class="count d-flex">0</small>

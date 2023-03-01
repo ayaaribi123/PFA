@@ -1,7 +1,17 @@
+const {
+  verifyToken,
+  verifyTokenAndAuthorization,
+  verifyTokenAndAdmin,
+} = require("./verifyToken");
+
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
-  res.render("admin");
+  try {
+    res.render("admin");
+  } catch (err) {
+    res.redirect("/auth/login");
+  }
 });
 
 module.exports = router;

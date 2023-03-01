@@ -1,0 +1,49 @@
+<!-- Product Details -->
+<section class="section product-detail">
+    <div class="details container">
+        <div class="left">
+            <div class="main">
+                <img src="<%= ObjProduct.img %>" alt="" />
+            </div>
+            <div class="thumbnails">
+                <div class="thumbnail">
+                    <img src="./images/amla2.jpg" alt="" />
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/GUAVA finale.jpg" alt="" />
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/TAMARILLO3.jpg" alt="" />
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/custard.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h1><%= ObjProduct.title %></h1>
+            <div class="price"><%= ObjProduct.price %></div>
+            <form>
+                <div>
+                    <select>
+                        <option value="Select Quantity" selected disabled>
+                            Select Quantity
+                        </option>
+                        <option value="1">32</option>
+                        <option value="2">42</option>
+                        <option value="3">52</option>
+                        <option value="4">62</option>
+                    </select>
+                    <span><i class="fas fa-chevron-down"></i></span>
+                </div>
+            </form>
+
+            <form class="form">
+                <input type="text" placeholder="1" />
+                <a href="cart.html" class="addCart">Add To Cart</a>
+            </form>
+            <h3>Product Detail</h3>
+            <p><%= ObjProduct.desc %></p>
+        </div>
+    </div>
+</section>

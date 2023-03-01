@@ -5,13 +5,13 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/public/images/favicon.png" type="image/png" />
+	<link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
 
 	<!-- Custom StyleSheet -->
-	<link rel="stylesheet" href="/public/styles.css" />
+	<link rel="stylesheet" href="./styles.css" />
 	<title>Exotic - products</title>
 </head>
 
@@ -22,7 +22,7 @@
 	<nav class="nav">
 		<div class="wrapper container">
 			<div class="logo"><a href="/">
-					<img src="/public/images/logo final.jpg" alt="">
+					<img src=".images/logo final.jpg" alt="">
 				</a>
 			</div>
 			<ul class="nav-list">
@@ -43,11 +43,11 @@
 				<li class="icons">
 					<a href="/cart">
 						<span>
-							<img src="/public/images/shoppingBag.svg" alt="" />
+							<img src=".images/shoppingBag.svg" alt="" />
 							<small class="count d-flex">0</small>
 						</span>
 					</a>
-					<span><img src="/public/images/search.svg" alt="" /></span>
+					<span><img src="./images/search.svg" alt="" /></span>
 				</li>
 			</ul>
 			<label for="" class="btn open-btn"><i class="fas fa-bars"></i></label>
@@ -80,224 +80,28 @@
 				</form>
 
 				<div class="product-layout">
-
+				<% list_of_products.forEach(item => { %>
 					<div class="product">
 						<div class="promotion-item">
-							<img src="/public/images/avocadofinale.jpg" alt="" />
+							<img src="<%- item.img %>" alt="" />
 							<div class="addCart">
 								<i class="fas fa-shopping-cart"></i>
 							</div>
 							<ul class="side-icons">
 							</ul>
 						</div>
-						<div class="promotion-content-avocado">
+						<div class="promotion-content-<% item.class %>">
 							<div class="bottom">
-								<h3><a href="../views/product-detail/productDetails.html">AVOCADO</a></h3>
+								<h3><a href="/products/find/<%= item._id %>"><%= item.title %></a></h3>
 							</div>
 						</div>
 					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/coco1.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-coconut">
-							<div class="bottom">
-								<h3><a href="productDetaill-cocnut.html">COCONUT</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/DRAGONFRUITfinale.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-dragonfruit">
-							<div class="bottom">
-								<h3><a href="prductdetail-DRAGONFRUIT.html">DRAGONFRUIT</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/javafinale.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-javaapple">
-							<div class="bottom">
-								<h3><a href="productDetailJAVA APPLE.html">JAVA APPLE</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/kaki finale.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-kaki">
-							<div class="bottom">
-								<h3><a href="productDetail-kaki.html">KAKI</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/PINEAPPLEfinale.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-ananas">
-							<div class="bottom">
-								<h3><a href="productdeatail-ananas.HTML">PINEAPPLE</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/mangofinalee.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-mango">
-							<div class="bottom">
-								<h3><a href="productdetail-mango.html">MANGO</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/RASPBERRIESfinaleee.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-Respberries">
-							<div class="bottom">
-								<h3><a href="productdetail-resperries.html">RASPBERRIES</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/BLUEBERRIES finale.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-Blueberries">
-							<div class="bottom">
-								<h3><a href="productdetail-BLUEBERRIES.html">BLUEBERRIES</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/STARFRUIT finale.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-starfruit">
-							<div class="bottom">
-								<h3><a href="productdetail- STARFRUIT.html">STARFRUIT</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/litcchi.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-litchi">
-							<div class="bottom">
-								<h3><a href="productdetail-LITCHI.html">LITCHI</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/GUAVA finale.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-guava">
-							<div class="bottom">
-								<h3><a href="productdetail-guava.html">GUAVA</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/JUJUBEfinale.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-Jujubeber">
-							<div class="bottom">
-								<h3><a href="productdetail- JUJUBE.html">JUJUBE</a></h3>
-							</div>
-						</div>
-					</div>
-					<div class="product">
-						<div class="promotion-item">
-							<img src="/public/images/JACKFRUIT1.jpg" alt="" />
-							<div class="addCart">
-								<i class="fas fa-shopping-cart"></i>
-							</div>
-							<ul class="side-icons">
-							</ul>
-						</div>
-						<div class="promotion-content-Jackfruit">
-							<div class="bottom">
-								<h3><a href="productdetail-JACKFRUIT.html">JACKFRUIT</a></h3>
-							</div>
-						</div>
-					</div>
+				<% }) %>
 				</div>
 
 				<!-- PAGINATION -->
-				<ul class="pagination">
-					<span><a href="/products">1</a></span>
-					<span><a href="/2">2</a></span>
-				</ul>
+				<div class="pagination">
+				</div>
 			</div>
 		</div>
 	</section>
