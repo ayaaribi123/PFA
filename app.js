@@ -13,7 +13,6 @@ const userRoute = require("./routes/user");
 const authRoute = require("./routes/auth");
 const productRoute = require("./routes/product");
 const twoRoute = require("./routes/2");
-const adminRoute = require("./routes/admin");
 /*
 const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/order");
@@ -23,7 +22,7 @@ const orderRoute = require("./routes/order");
 app.set("view engine", "ejs");
 
 // set the path our 'views' are going to be coming from
-app.set("views", __dirname + "/views");
+//app.set("views", __dirname + "/views");
 
 // layout (to not duplicate frequently used HTML elements such as header and footer)
 // app.set("layout", "layouts/layout");
@@ -33,7 +32,7 @@ app.set("views", __dirname + "/views");
 app.use(express.urlencoded({ extended: false }));
 
 // GET /styles.css, images and js files
-app.use(express.static("public"));
+app.use('/public', express.static("public"));
 
 mongoose
   .connect(process.env.MONGO_URL)
@@ -48,7 +47,6 @@ app.use("/auth", authRoute);
 app.use("/users", userRoute);
 app.use("/products", productRoute);
 app.use("/2", twoRoute);
-app.use("/admin", adminRoute);
 /*
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
