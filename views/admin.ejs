@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+	<link rel="shortcut icon" href="/public/images/favicon.png" type="image/png" />
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 	<!-- ======== Swiper Js ======= -->
@@ -14,7 +14,7 @@
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
 	<!-- Custom StyleSheet -->
-	<link rel="stylesheet" href="./styles.css" />
+	<link rel="stylesheet" href="/public/styles.css" />
 	<title>Exotic</title>
 </head>
 
@@ -25,7 +25,7 @@
 		<nav class="nav">
 			<div class="wrapper container">
 				<div class="logo"><a href="/">
-						<img src="/images/logo final.jpg" alt="">
+						<img src="/public/images/logo final.jpg" alt="">
 					</a>
 				</div>
 				<ul class="nav-list">
@@ -34,7 +34,7 @@
 					</div>
 					<li><a href="/">Home</a></li>
 					<li><a href="/products">Products</a></li>
-					<li><a href="/">Logout</a></li>
+					<li><a href="/auth/login">Login</a></li>
 
 					<li><a href="">Feedback</a></li>
 					</li>
@@ -46,12 +46,12 @@
 					<li class="icons">
 						<a href="/cart">
 							<span>
-								<img src="/images/shoppingBag.svg" alt="">
+								<img src="/public/images/shoppingBag.svg" alt="">
 								<small class="count d-flex">0</small>
 							</span>
 						</a>
 						<span>
-							<img src="/images/search.svg" alt="">
+							<img src="/public/images/search.svg" alt="">
 						</span>
 					</li>
 				</ul>
@@ -64,13 +64,16 @@
 				<div class="swiper-container slider-1">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img src="/images/hero-1.png" alt="">
+							<img src="/public/images/hero-1.png" alt="">
 	<div class="login-register">
+		<div class="use"></div>
 <a href="/users">All Users</a>
-<div class="login-register">
-<h1>Create a new product</h1>
+<div class="login-admine">
+<h1>
+	<p>Create a new product</p>
+</h1>
 </div>
-<div class="box">
+<div class="box-admin">
 <form action="/products" method="POST">
     <div class="input-here">
         <label for="title">Title</label>
@@ -86,8 +89,12 @@
     </div>
     <div class="input-here">
     <div>
+        <label for="href">href</label>
+        <input type="text" class="input id="href" name="href" required>
+    </div>
+    <div>
         <label for="class">Class</label>
-        <input type="text" id="class" name="class" required>
+        <input type="text" class="input id="class" name="class" required>
     </div>
     <div>
         <label for="price">Price</label>
