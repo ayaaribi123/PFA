@@ -20,7 +20,6 @@ router.post("/register", async (req, res) => {
 
   try {
     const savedUser = await newUser.save();
-    //res.redirect('/auth/login');
     res.status(201).redirect("/auth/login");
   } catch (err) {
     res.status(500).json(err);
@@ -55,18 +54,17 @@ router.post("/login", async (req, res) => {
       { expiresIn: "3d" }
     );
 
+    /*
     // To not show the password when user informations show up
     const { password, ...others } = user._doc;
-    //res.status(200).json({...others, accessToken});
+    res.status(200).json({...others, accessToken});
+    */
 
-    // res.redirect("/products");
     if (user.isAdmin == true) {
-      res.status(200).redirect("/admin");
+      res.redirect("/admin");
     } else {
-      res.status(200).render("products", { sign : "Logout" });
-      //json({ ...others, accessToken });
+      res.redirect("/products");
     }
-    
   } catch (err) {
     res.status(500).json(err);
   }
