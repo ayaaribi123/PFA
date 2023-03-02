@@ -150,14 +150,25 @@ nav .wrapper {
 	position: absolute;
 	top: 23%;
 	left: 80px;
-
-
 }
+
+.login-admine h1{
+	position:relative;
+	top: -160%;
+	left: -80px;
+}
+
 .box {
 	position: absolute;
 	top: 54%;
 	left: 80px;
 	transform: translateY(-50%);
+}
+
+.box-admin{
+	position: absolute;
+	top: 50%;
+	left: 80px;
 }
 
 .login-register {
