@@ -6,6 +6,25 @@ Our project Exotic is an online shop where you can order your favorite exotic fr
 ![Capture22](https://user-images.githubusercontent.com/93769004/222766868-6c5a475a-ad6d-47ed-b676-e1c843c58ab2.PNG)
 ![Capture33](https://user-images.githubusercontent.com/93769004/222766928-c119dc32-4f40-49c0-84c8-add0d6631503.PNG)
 
+# Blog about our project
+
+```
+https://medium.com/p/8ee66c4d9d1e/edit
+```
+
+# Project page
+
+```
+the project's page: http://localhost:5000
+
+```
+
+# LinkedIn profile
+
+```
+author's LinkedIn profile: https://www.linkedin.com/in/aya-aribi-2b1073243/
+```
+
 # Installation
 
 ```
