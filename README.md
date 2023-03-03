@@ -1,4 +1,4 @@
-            ![logo_final-removebg-preview (1)](https://user-images.githubusercontent.com/93769004/222761763-9acbec58-178d-48da-8e65-9b93b02d7dcc.png)
+![logo_final-removebg-preview (1)](https://user-images.githubusercontent.com/93769004/222761763-9acbec58-178d-48da-8e65-9b93b02d7dcc.png)
 
 # Introduction
 
@@ -28,4 +28,5 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 # Contributors
 aya aribi https://github.com/ayaaribi123
+
 Abdelmoula talbi https://github.com/Abdelmaoula-Talbi
