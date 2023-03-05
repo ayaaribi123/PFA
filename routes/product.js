@@ -81,7 +81,7 @@ router.get("/", async (req, res) => {
     const products = query
       ? await Product.find().sort({ createdAt: -1 }).limit(5)
       : await Product.find();
-    res.render("products", { list_of_products: products});
+    res.render("products", { list_of_products: products });
   } catch (err) {
     res.status(500).json(err);
   }
